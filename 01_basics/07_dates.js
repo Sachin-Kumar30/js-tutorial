@@ -25,7 +25,7 @@
 
  newDate.toLocaleString('dafault', {
     weekday: "long",
-    timeZone:
+    
  })
   
  
