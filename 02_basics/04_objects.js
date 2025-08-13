@@ -61,11 +61,11 @@ const course = {
 const {courseInstructor: instructor} = course // => destructuring of object
 console.log(instructor);
 
-{      // in JSON we don't have object name just only {}
-    "name": "sachin", // in JSON both key: val are in string format
-    "coursename": "js in hindi",
-    "price": "free"
-}
+// {      // in JSON we don't have object name just only {}
+//     "name": "sachin", // in JSON both key: val are in string format
+//     "coursename": "js in hindi",
+//     "price": "free"
+// }
 
 
 
