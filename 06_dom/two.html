@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Chai Aur Code </title>
+    <style>
+        .bg-black{
+            background-color: #212121;
+            color:#fff;
+        }
+    </style>
+
+</head>
+<body class = "bg-black">
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+</body>
+<script>
+    const parent = document.querySelector(".parent");
+    // console.log(parent); // gives parent class with its child
+    // console.log(parent.children); // gives HTML Collection of the all child of parent class
+    // console.log(parent.children[1].innerHTML);
+
+    // for (let i = 0; i < parent.children.length; i++) {
+    //     console.log(parent.children[i].innerHTML);
+        
+    // }
+    // parent.children[0].style.color = "orange";
+    // console.log(parent.firstElementChild); // gives first elememt of the parent class
+    // console.log(parent.lastElementChild); // gives last elememt of the parent class
+
+    const dayOne = document.querySelector(".day"); // accesing the child directly without traversing through parent 
+    // console.log(dayOne);
+    // console.log(dayOne.parentElement); // gives parent Element of the chil 
+    // console.log(dayOne.nextElementSibling); // gives next sibling element of same class (child)
+
+    console.log("NODES: ", parent.childNodes);// gives all the nodes of parent class (in form of NodeList(each linebreak is counted in this node list (study it more from google))) 
+
+</script>
+</html>
