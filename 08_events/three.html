@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur JavaScript</h1>
+    <button  id="stop">Stop</button>
+    <button  id="start">Start</button>
+</body>
+<script>
+    // intervalId = setInterval(sayDate, 1000, "HI") // setInterval () we can also pass arguments also which will be recieved by teh callBack Function
+
+     
+    let intervalId;
+
+    document.querySelector("#start").addEventListener("click", function() {
+            intervalId = setInterval(sayDate, 1000, "HI")
+
+    }, false)
+
+     const sayDate = function(str) {
+            console.log("Start Clicked");
+            console.log("Hello", Date.now(), str);
+    }
+    
+    document.querySelector("#stop").addEventListener("click", function() {
+        console.log("STOP CLICKED");
+        
+        clearInterval(intervalId)
+    },)
+</script>
+</html>
