@@ -93,7 +93,7 @@ async function getAllUsers() {
 
 fetch("https://api.github.com/users/hiteshchoudhary")
 .then((response) => {
-    return response.json()
+    return response.json() // means convert the JSON into object (because js can't work with JSON data format)
 })
 .then((data) => {
     console.log(data);
