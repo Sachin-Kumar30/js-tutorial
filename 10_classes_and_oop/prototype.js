@@ -67,7 +67,7 @@ let anotherUsername = "ChaiAurCode     "
 String.prototype.trueLength = function(){
     console.log(`${this}`); // gives refference to who is calling currnt function
     console.log(`True length is: ${this.trim().length}`);
-}
+}m
 
 anotherUsername.trueLength() // injected the method using prototype
 "hitesh".trueLength() // Now string has this method
